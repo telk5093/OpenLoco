@@ -143,7 +143,7 @@ namespace openloco::environment
     {
         static constexpr const char * paths[] =
         {
-            "Data/G1.DAT",
+            "Data/g1.DAT",
             "Data/PLUGIN.DAT",
             "Data/PLUGIN2.DAT",
             "Data/CSS1.DAT",
