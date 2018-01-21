@@ -160,4 +160,5 @@ namespace openloco::interop
     void hook_lib(uint32_t address, void * fn);
 
     void register_hooks();
+    void load_sections();
 }

@@ -2,6 +2,7 @@
 
 #include <time.h>
 #include <pwd.h>
+#include "../interop/interop.hpp"
 #include "platform.h"
 #include "../openloco.h"
 
@@ -12,6 +13,7 @@
 
 int main(int argc, const char * * argv)
 {
+    openloco::interop::load_sections();
     openloco::lpCmdLine((char *)argv[0]);
     openloco::main();
     return 0;
