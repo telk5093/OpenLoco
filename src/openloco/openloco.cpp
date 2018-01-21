@@ -3,6 +3,7 @@
 #include <string>
 #include <vector>
 #include <setjmp.h>
+#include <cstring>
 
 #ifdef _WIN32
     // timeGetTime is unavailable if we use lean and mean
@@ -81,10 +82,12 @@ namespace openloco
         return glpCmdLine;
     }
 
+#ifndef _WIN32
     void lpCmdLine(const char * path)
     {
          glpCmdLine = strdup(path);
     }
+#endif
 
     bool is_editor_mode()
     {

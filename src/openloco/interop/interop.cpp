@@ -1,6 +1,6 @@
 #include <cstring>
 #include "interop.hpp"
-#include "../log.h"
+#include "../console.h"
 
 #pragma warning(disable : 4731) // frame pointer register 'ebp' modified by inline assembly code
 #define PLATFORM_X86
