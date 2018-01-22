@@ -420,7 +420,7 @@ lib_CreateRectRgn(int x1, int y1, int x2, int y2)
     return 0;
 }
 
-static uint
+static uint32_t
 STDCALL
 lib_GetUpdateRgn(uintptr_t hWnd, uintptr_t hRgn, bool bErase)
 {
